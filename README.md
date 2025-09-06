@@ -13,6 +13,7 @@ Test Docker
 - Cоздал группу docker - sudo groupadd docker
 - Добавил пользователя в группу - sudo usermod -aG docker $USER
 - Применить изменения без перезагрузки - newgrp docker
+
 <img width="758" height="407" alt="изображение" src="https://github.com/user-attachments/assets/a2d7fabd-5c70-465a-bbc0-77545581f1c1" />
 
 ## Шаг 2 - Разработка простой программы:
