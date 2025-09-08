@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  python-app:
+    build: .  # Сборка образа из текущей директории
+    container_name: my-python-app  # Имя контейнера
+    # volumes:
+    #   - ./app.py:/app/app.py  # Для разработки, если нужно монтировать код
+    restart: unless-stopped  # Перезапуск контейнера при падении
+
+# Комментарии:
+# version - версия формата Compose
+# services - определение сервисов (контейнеров)
+# build - указывает на Dockerfile в текущей директории
+# container_name - удобное имя контейнера
+# restart - политика перезапуска для устойчивости
